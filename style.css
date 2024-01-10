@@ -48,7 +48,22 @@ body {
     min-height: 100vh;
     display: grid;
     place-items: center;
+    background-color: hsl(var(--dark-blue));
+}
+
+.divider-mobile {}
+
+.divider-desktop {
+    display: none;
 }
 
 
-@media (min-width: 376px) {}
+@media (min-width: 376px) {
+    .divider-mobile {
+        display: none;
+    }
+
+    .divider-desktop {
+        display: unset;
+    }
+}
