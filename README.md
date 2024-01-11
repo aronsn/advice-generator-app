@@ -24,8 +24,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![mobile](https://github.com/aronsn/advice-generator-app/assets/54532695/853a1694-8464-40f8-9aed-497cbd5ee9f5)
 
+![desktop](https://github.com/aronsn/advice-generator-app/assets/54532695/9236939f-a20f-45ec-9b97-6a047bd4ea19)
 
 ### Links
 
