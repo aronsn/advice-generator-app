@@ -107,15 +107,24 @@ button {
     border: none;
     background-color: hsl(var(--neon-green));
     border-radius: 50%;
+    transition: ease 0.2s;
 }
 
 button:hover {
     cursor: pointer;
     box-shadow: 0px 0px 24px 1px hsl(var(--neon-green));
-    transition: ease 0.1s;
+    transition: ease 0.2s;
 }
 
+button:disabled {
+    background-color: hsla(var(--grayish-blue), 1);
+    transition: ease 0.2s;
+}
 
+button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+}
 
 @media (min-width: 376px) {
     .card {
