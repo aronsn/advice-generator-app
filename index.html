@@ -11,13 +11,13 @@
 
 <body onload="getNewAdvice()">
   <main class="card">
-    <p class="advice">Advice #<span id="number"></span></p>
+    <h1 class="advice">Advice #<span id="number"></span></h1>
     <p class="quote"><q></q></p>
 
-    <img data-svg="mobile" src="./images/pattern-divider-mobile.svg">
-    <img data-svg="desktop" src="./images/pattern-divider-desktop.svg">
+    <img data-svg="mobile" src="./images/pattern-divider-mobile.svg" alt="pattern divider mobile">
+    <img data-svg="desktop" src="./images/pattern-divider-desktop.svg" alt="pattern divider desktop">
 
-    <button onclick="getNewAdvice()">
+    <button onclick="getNewAdvice()" aria-label="new advice">
       <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
