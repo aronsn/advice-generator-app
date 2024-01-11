@@ -14,13 +14,15 @@
     --dark-blue: 218, 23%, 16%;
 
     /* Typography */
-    --font-size-quote: 28px;
+    --fs-quote: 28px;
 
     /* Spacing (8 point grid system) */
-    --point-space-1: 8px;
-    --point-space-2: 16px;
-    --point-space-3: 24px;
-    --point-space-4: 32px;
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 48px;
 
 }
 
@@ -51,19 +53,101 @@ body {
     background-color: hsl(var(--dark-blue));
 }
 
-.divider-mobile {}
-
-.divider-desktop {
-    display: none;
+.card {
+    position: relative;
+    background-color: hsl(var(--dark-grayish-blue));
+    text-align: center;
+    padding: var(--spacing-xxl) var(--spacing-md);
+    border-radius: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 
+
+img {
+    margin-bottom: var(--spacing-md);
+}
+
+.advice {
+    font-size: 0.4rem;
+    color: hsl(var(--neon-green));
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: var(--spacing-md);
+}
+
+.quote {
+    color: hsl(var(--light-cyan));
+    font-size: 0.8rem;
+    margin-bottom: var(--spacing-md);
+    font-weight: 800;
+}
+
+
+img[data-svg="mobile"] {
+    display: grid;
+    align-content: center;
+    width: auto;
+    height: 16px;
+    object-fit: cover;
+}
+
+
+img[data-svg="desktop"] {
+    display: none;
+}
+
+button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: none;
+    background-color: hsl(var(--neon-green));
+    border-radius: 50%;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 24px 1px hsl(var(--neon-green));
+    transition: ease 0.1s;
+}
+
+
+
 @media (min-width: 376px) {
-    .divider-mobile {
+    .card {
+        margin: 0;
+        max-width: 550px;
+        padding: var(--spacing-xxl);
+
+    }
+
+    .advice {
+        font-size: 0.5rem;
+    }
+
+    .quote {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-xl);
+    }
+
+    img[data-svg="mobile"] {
         display: none;
     }
 
-    .divider-desktop {
-        display: unset;
+    img[data-svg="desktop"] {
+        display: grid;
+        align-content: center;
+        width: auto;
+        height: 16px;
+        object-fit: cover;
+
+    }
+
+    button {
+        transform: translate(-55%, -50%);
     }
 }
