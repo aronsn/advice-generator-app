@@ -58,7 +58,7 @@ body {
     background-color: hsl(var(--dark-grayish-blue));
     text-align: center;
     padding: var(--spacing-xxl) var(--spacing-md);
-    border-radius: 16px;
+    border-radius: 14px;
     margin-left: 16px;
     margin-right: 16px;
 }
