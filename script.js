@@ -37,5 +37,3 @@ const getNewAdvice = async () => {
         }, 2000);
     }
 }
-
-getNewAdvice()
